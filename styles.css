@@ -35,7 +35,7 @@ header div{
     display: flex;
     padding: 4px;
 
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 header div:hover{
@@ -92,7 +92,7 @@ section ul li{
 }
 
 section ul li:hover{
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 .games-list img{
@@ -109,7 +109,7 @@ section ul li:hover{
 /* animation*/
 
 header div{
-    animation: fromTop .7s 2s backwards;
+    animation: fromTop .7s 1s backwards;
 }
 
 main section{
@@ -241,5 +241,35 @@ main section:nth-child(3){
         padding: 5px;
     
         transition: transform .3s;
+    }
+}
+
+/*A71*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+    section ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 24px;
+    }
+
+    main{
+        max-width: 510px;
+        width: 90%;
+        margin: 20px;
+        display: grid;
+        gap: 20px;
+    }
+
+    header div{
+        width: 120px;
+        margin: -20px auto;
+        background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
+        border-radius: 50%;
+    
+        display: flex;
+        padding: 5px;
+    
+        transition: transform 0.3s;
     }
 }
